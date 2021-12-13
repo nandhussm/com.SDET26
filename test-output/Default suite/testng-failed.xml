@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.crm.SDET26.BasicScripts.Demo">
+        <methods>
+          <include name="openDBConnection"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToApp"/>
+          <include name="closeDBConnection"/>
+          <include name="launchBrowser"/>
+          <include name="demo"/>
+          <include name="logoutToApp"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.BasicScripts.Demo -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

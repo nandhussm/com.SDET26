@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.crm.SDET26.PomAndUtility.CreateOrgWithIndustryTest"/>
+      <class name="com.crm.SDET26.PomAndUtility.CreateContactWithOrgTest"/>
+      <class name="com.crm.SDET26.PomAndUtility.CreateOrganizationTest"/>
+      <class name="com.crm.SDET26.PomAndUtility.CreateContactTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

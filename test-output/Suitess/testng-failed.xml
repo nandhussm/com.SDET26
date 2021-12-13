@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suitess]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.SDET26.PomAndUtility.CreateContactTestTest">
+        <methods>
+          <include name="openDBConnection"/>
+          <include name="loginToApp"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="CreateContactWithSupportDateTest"/>
+          <include name="logoutToApp"/>
+          <include name="logoutToApp"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.PomAndUtility.CreateContactTestTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.SDET26.PomAndUtility.CreateContactTestTest">
+        <methods>
+          <include name="openDBConnection"/>
+          <include name="loginToApp"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="CreateContactWithSupportDateTest"/>
+          <include name="logoutToApp"/>
+          <include name="logoutToApp"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.PomAndUtility.CreateContactTestTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suitess] -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.crm.SDET26.PomAndUtility.CreateContactTest">
+        <methods>
+          <include name="CreateContact"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.PomAndUtility.CreateContactTest -->
+      <class name="com.crm.SDET26.PomAndUtility.CreateContactWithOrgTest">
+        <methods>
+          <include name="CreateContactWithOrgTest"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.PomAndUtility.CreateContactWithOrgTest -->
+      <class name="com.crm.SDET26.PomAndUtility.CreateOrganizationTest">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="createOrganizationTest"/>
+          <include name="launchBrowser"/>
+          <include name="logoutToApp"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.PomAndUtility.CreateOrganizationTest -->
+      <class name="com.crm.SDET26.PomAndUtility.CreateOrgWithIndustryTest">
+        <methods>
+          <include name="openDBConnection"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="CreateOrgWithIndustry"/>
+          <include name="logoutToApp"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.PomAndUtility.CreateOrgWithIndustryTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
