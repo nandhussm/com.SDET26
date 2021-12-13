@@ -23,7 +23,7 @@ import com.crm.comcast.pomrepositrylib.Home;
 import com.crm.comcast.pomrepositrylib.Login;
 @Listeners(com.crm.comcast.genericUtility.LisImpClass.class)
 public class ConvertLeadToOppurtunityBySelectingOppurtunityCheckBoxTest  extends Baseclass{
-	@Test(groups="ST")
+	@Test
 	public void ConvertLeadToOppurtunityBySelectingOppurtunityCheckBoxTest() {
 		Login ln = new Login(driver);
 		

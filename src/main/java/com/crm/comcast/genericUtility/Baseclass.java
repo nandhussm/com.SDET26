@@ -24,14 +24,14 @@ public class Baseclass {
 	public JavaUtility ju = new JavaUtility();
 	public ExcelUtility eu = new ExcelUtility();
 	public static  WebDriver sdriver;
-     @BeforeSuite(groups="ST")
+     @BeforeSuite
      public void  openDBConnection() {
     	 System.out.println("before suite");
     	 System.out.println("-----------------------db connection--------------------------");
     	 System.out.println("=======================================");
      }
-    // @Parameters ("browser")
-     @BeforeClass(groups="ST")
+     @Parameters ("browser")
+     @BeforeClass
      public void launchBrowser() throws IOException {
     	 System.out.println("before class");
     	String browser = fu.getPropertyKeyValue("browser");
@@ -48,7 +48,7 @@ public class Baseclass {
     		driver.manage().window().maximize();
     		System.out.println("=====================================");
      }
-     @BeforeMethod(groups="ST")
+     @BeforeMethod
      public void loginToApp() throws IOException {
     	 System.out.println("before Method");
     	 String username = fu.getPropertyKeyValue("username");
@@ -57,7 +57,7 @@ public class Baseclass {
     		ln.logintoapp(username, password);
     		System.out.println("=====================================");
      }
-     @AfterMethod(groups="ST")
+     @AfterMethod
      public void logoutToApp() {
     	 System.out.println("AfterMethod"); 	
     	 Home hm= new Home(driver);
@@ -65,13 +65,13 @@ public class Baseclass {
     	  hm.getSignOut().click();
     	  System.out.println("======================================");
      }
-     @AfterClass(groups="ST")
+     @AfterClass
      public void closeTheBrowser() {
     	 System.out.println("After Class");
     	 wdu.quit(driver);
     	 System.out.println("=======================================");
      }
-     @AfterSuite(groups="ST")
+     @AfterSuite
      public void closeDBConnection() {
     	 System.out.println("After Suite");
     	 System.out.println("==============DB Connection====================");	 
