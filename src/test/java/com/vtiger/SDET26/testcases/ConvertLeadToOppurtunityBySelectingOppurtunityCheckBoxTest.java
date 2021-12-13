@@ -43,22 +43,6 @@ public class ConvertLeadToOppurtunityBySelectingOppurtunityCheckBoxTest  extends
 		
 		
 
-	}
-	@Test(groups="RT")
-	public void ConvertLeadToOpertunitiesBySelectingOrganisationAndOpertunityTheChekboxsAndFeelAllTheMandatoryFields() {
-		Login ln = new Login(driver);
-		
-		Home hme = new Home(driver);
-		hme.getLeads().click();
-		
-	ConvertLeadToOrganization clto = new ConvertLeadToOrganization(driver);
-		clto.getArilius().click();
-		clto.getConvertLead().click();
-	     clto.getselectpotential().click();
-	     clto.getselectaccount().click();
-	     clto.Save();
-		  wdu.validatingTheValues(driver);
-		 
-		 
+	 
 }
 }
